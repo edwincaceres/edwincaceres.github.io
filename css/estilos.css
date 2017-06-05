@@ -1,0 +1,93 @@
+.container {
+    float: right;
+    padding-top: 10px;
+    display: inline-block;
+    width: calc(100% - 200px - 250px - 15px);
+    width: calc(100% / 3 - 10px);
+    /*  width: 900px;
+      height: 600px;
+      /*position: absolute;
+      left: 0;
+      right: 0;
+      margin: 0 auto;*/
+    top: 20px;
+}
+.div-img {
+    display: inline-block;
+    /* margin-left: auto;
+     margin-right: auto;*/
+}
+.div-img.hidden {
+    /* overflow: hidden;*/
+}
+.div-img .img {
+    display: inline-block;
+    /* margin-left: auto;
+     margin-right: auto;*/
+
+    width: 100%;
+    transform: scale(1);
+    -ms-transform: scale(1);
+    -moz-transform: scale(1);
+    -webkit-transform: scale(1);
+    -o-transform: scale(1);
+    -webkit-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+    -ms-transition: all 500ms ease-in-out;
+    -o-transition: all 500ms ease-in-out;
+}
+.div-img:hover .img {
+    transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+
+header h1 {
+    margin: 0;
+    color: #42ebff;
+    line-height: 70px;
+    text-align: center;
+    background-color: #1BA044;
+    font-family: 'Pacifico', cursive;
+}
+
+
+ /* Remove the navbar's default margin-bottom and rounded borders */
+.navbar {
+    margin-bottom: 0;
+    border-radius: 2px;
+    border: teal;
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 20px;
+    background-color: #1f4204;
+    text-align: center;
+}
+
+/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+.row.content {height: 2000px}
+
+/* Set gray background color and 100% height */
+.sidenav {
+    padding-top: 20px;
+    background-color: #1BA044;
+    height: 100%;
+    font-size: 22px;
+}
+
+/* Set black background color, white text and some padding */
+footer {
+    background-color: #135538;
+    color: white;
+    padding: 15px;
+}
+
+/* On small screens, set height to 'auto' for sidenav and grid */
+@media screen and (max-width: 767px) {
+    .sidenav {
+        height: auto;
+        padding: 15px;
+    }
+    .row.content {height:auto;}
+}
